@@ -1,0 +1,30 @@
+section {
+  margin: 10rem;
+  padding: 3rem;
+  border: 5px;
+  border-radius: 10px;
+  color: black;
+  width: max-content;
+  height: 100%;
+  justify-content: space-between;
+  box-shadow: 5px 5px 5px 6px black;
+}
+
+.title {
+  font-weight: 300;
+  font-family: monospace;
+
+  font-size: medium;
+  word-spacing: 4px;
+}
+
+.opening {
+  color: lightcoral;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+}
+
+.release {
+  color: violet;
+  font-family: monospace;
+}

@@ -1,0 +1,18 @@
+.users {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 40rem;
+}
+
+.users ul {
+  list-style: none;
+  padding: 1rem;
+  border: 5px dotted lightslategray;
+}
+
+.users li {
+  border: 5px solid lightslategray;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
