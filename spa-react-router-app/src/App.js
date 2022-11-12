@@ -1,21 +1,27 @@
 import "./App.css";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Welcome from "./Components/Welcome";
 import Products from "./Components/Products";
 import Header from "./Header/Header";
+import ProductDetail from "./Components/ProductDetail";
 
 const App = () => {
   return (
     <div>
       <Header />
       <main>
-        <Route path="/welcome">
-          <Welcome />
-        </Route>
+        <Switch>
+          <Route path="/welcome">
+            <Welcome />
+          </Route>
+          <Route path="/products/:pID">
+            <ProductDetail />
+          </Route>
 
-        <Route path="/products">
-          <Products />
-        </Route>
+          <Route path="/products" exact>
+            <Products />
+          </Route>
+        </Switch>
       </main>
     </div>
   );
