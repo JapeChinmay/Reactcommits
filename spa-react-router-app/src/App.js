@@ -1,9 +1,12 @@
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import Welcome from "./Components/Welcome";
 import Products from "./Components/Products";
 import Header from "./Header/Header";
 import ProductDetail from "./Components/ProductDetail";
+import AllQuotes from "./Pages/AllQuotes";
+import SingleQuote from "./Pages/singleQuote";
+import NewQuote from "./Pages/NewQuote";
 
 const App = () => {
   return (
@@ -11,6 +14,18 @@ const App = () => {
       <Header />
       <main>
         <Switch>
+          <Route path="/" exact>
+            <Redirect to="/welcome" />
+          </Route>
+          <Route path="/welcome/Quotes" exact>
+            <AllQuotes />
+          </Route>
+          <Route path="/welcome/Quotes/:quoteId">
+            <SingleQuote />
+          </Route>
+          <Route path="/welcome/newQuote">
+            <NewQuote />
+          </Route>
           <Route path="/welcome">
             <Welcome />
           </Route>
