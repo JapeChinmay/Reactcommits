@@ -7,6 +7,7 @@ import ProductDetail from "./Components/ProductDetail";
 import AllQuotes from "./Pages/AllQuotes";
 import SingleQuote from "./Pages/singleQuote";
 import NewQuote from "./Pages/NewQuote";
+import MainNavigation from "./Components/Navigation/MainNavigation";
 
 const App = () => {
   return (
