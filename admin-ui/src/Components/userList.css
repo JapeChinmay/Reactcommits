@@ -1,0 +1,54 @@
+body {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+input {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.container input {
+  width: 65%;
+}
+
+.table {
+  width: 65%;
+  margin: auto;
+}
+.table tr {
+  width: 50%;
+}
+
+.table tr th {
+  width: 30%;
+  border-bottom: black 1px dashed;
+}
+
+.table tr th :hover {
+  background-color: lightgray;
+}
+
+.table tr:hover {
+  background-color: lightgray;
+}
+.pagination {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 2%;
+  text-decoration: none;
+  list-style: none;
+  margin: auto;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  gap: 1%;
+  border-radius: 1px;
+}
