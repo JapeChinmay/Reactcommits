@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect, useState } from "react";
-import axios from "axios";
 
 const User = (props) => {
   const [loading, setIsLoading] = useState(true);
@@ -9,8 +8,12 @@ const User = (props) => {
   });
 
   useEffect(() => {
-    getUserDetails();
-    console.log("clled");
+    setTimeout(() => {
+      getUserDetails();
+      console.log("clled");
+    }, 2000);
+
+    //return () => clearTimeout(i);
   }, []);
 
   async function getUserDetails() {
