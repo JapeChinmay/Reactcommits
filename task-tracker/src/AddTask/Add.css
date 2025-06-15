@@ -14,6 +14,7 @@ html {
   gap: 0.8rem;
   margin: 1rem auto;
   padding: 1rem;
+  align-items: center;
 
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);

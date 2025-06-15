@@ -54,6 +54,10 @@ const SignUp = () => {
       saveData(signUpData);
     }
   };
+
+  const tologinPage = () => {
+    navigate("/login");
+  };
   return (
     <div className="container">
       <h1>Sign Up</h1>
@@ -91,6 +95,9 @@ const SignUp = () => {
 
         <button className="btn-submit" onClick={handleSubmit}>
           Register
+        </button>
+        <button className="to-login" onClick={tologinPage}>
+          Already registered?
         </button>
       </div>
     </div>

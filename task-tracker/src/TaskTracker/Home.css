@@ -10,6 +10,9 @@ html {
   max-width: 600px;
   margin: 2rem auto;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
 
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -34,6 +37,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  align-items: center;
 }
 
 /* Individual task item */

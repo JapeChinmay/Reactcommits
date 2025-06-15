@@ -29,6 +29,10 @@ const Login = () => {
     }
   };
 
+  const handlenavigationfromlogin = () => {
+    navigate("/signup");
+  };
+
   return (
     <div className="container">
       <h1>Login</h1>
@@ -55,6 +59,9 @@ const Login = () => {
           {error && <p>{error}</p>}
 
           <button className="btn-submit">Submit</button>
+          <button className="to-signup" onClick={handlenavigationfromlogin}>
+            Signup
+          </button>
         </form>
       </div>
     </div>
