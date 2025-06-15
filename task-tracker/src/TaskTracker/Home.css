@@ -1,0 +1,74 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #1e1e2f;
+  font-family: "Segoe UI", sans-serif;
+}
+.app-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+}
+
+/* App heading */
+.app-container h1 {
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+/* Container for input field and add button (in Add.jsx) */
+.container {
+  background-color: transparent;
+}
+
+/* Task list section */
+.task-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Individual task item */
+.task-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Text inside each task */
+.task-text {
+  font-size: 1rem;
+  color: #333;
+  flex: 1;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Delete button style */
+.delete-btn {
+  background-color: transparent;
+  color: #ff4d4d;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  transition: transform 0.1s ease-in-out;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+  color: #e60000;
+}
