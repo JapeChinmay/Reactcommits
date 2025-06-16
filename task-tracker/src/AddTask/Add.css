@@ -59,6 +59,9 @@ html {
   transition: background-color 0.3s ease;
   color: #fff;
 }
+.user-name {
+  color: black;
+}
 
 .add-button:hover {
   background-color: #0056b3;
