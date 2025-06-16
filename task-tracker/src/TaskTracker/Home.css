@@ -20,13 +20,10 @@ html {
   text-align: center;
 }
 
-/* App heading */
 .app-container h1 {
-  color: #222;
-  margin-bottom: 1.5rem;
+  color: #fff;
 }
 
-/* Container for input field and add button (in Add.jsx) */
 .container {
   background-color: transparent;
 }

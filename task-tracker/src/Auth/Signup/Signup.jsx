@@ -41,7 +41,7 @@ const SignUp = () => {
   };
 
   const saveData = (userData) => {
-    localStorage.setItem("user", JSON.stringify());
+    localStorage.setItem("user", JSON.stringify(userData));
     console.log(userData);
   };
 

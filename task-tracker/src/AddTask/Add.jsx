@@ -1,13 +1,19 @@
 import "./Add.css";
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Add = ({ onAdd }) => {
   const [inputValue, setInputValue] = useState("");
+  const navigate = useNavigate();
 
   const handleInputData = () => {
     onAdd(inputValue);
     setInputValue("");
+  };
+
+  const handlelogout = () => {
+    navigate("/login");
   };
   return (
     <div className="container">
@@ -21,6 +27,9 @@ const Add = ({ onAdd }) => {
       />
       <button className="add-button" onClick={handleInputData}>
         Add
+      </button>
+      <button className="log-out" onClick={handlelogout}>
+        Log out
       </button>
     </div>
   );

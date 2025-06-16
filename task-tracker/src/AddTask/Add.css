@@ -15,7 +15,6 @@ html {
   margin: 1rem auto;
   padding: 1rem;
   align-items: center;
-
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   max-width: 500px;
@@ -45,6 +44,20 @@ html {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   width: 50%;
+}
+.log-out {
+  background-color: red;
+  margin-top: 1rem;
+  padding: 0.5rem 0.8rem;
+  width: 100%;
+  text-align: center;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  color: #fff;
 }
 
 .add-button:hover {
