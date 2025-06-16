@@ -56,7 +56,7 @@ const Login = () => {
             name="password"
             onChange={handleChange}
           />
-          {error && <p>{error}</p>}
+          {error && <p className="login-error">{error}</p>}
 
           <button className="btn-submit">Submit</button>
           <button className="to-signup" onClick={handlenavigationfromlogin}>
