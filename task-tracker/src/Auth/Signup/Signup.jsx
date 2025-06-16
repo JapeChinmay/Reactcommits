@@ -50,7 +50,7 @@ const SignUp = () => {
 
     if (validate()) {
       alert("succes");
-      navigate("/");
+      navigate("/home");
       saveData(signUpData);
     }
   };

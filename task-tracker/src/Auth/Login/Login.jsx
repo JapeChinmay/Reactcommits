@@ -23,7 +23,7 @@ const Login = () => {
       USER.password === loginData.password
     ) {
       localStorage.setItem("isLoggedIn", true);
-      navigate("/");
+      navigate("/home");
     } else {
       setError("Invalid name or password");
     }
