@@ -1,5 +1,5 @@
 // src/Routes/AppRoutes.jsx
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../TaskTracker/Home";
 import Login from "../Auth/Login/Login";
 import SignUp from "../Auth/Signup/Signup";
